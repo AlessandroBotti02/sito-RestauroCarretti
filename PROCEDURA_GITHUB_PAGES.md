@@ -57,3 +57,31 @@ git push
 ```
 
 Dopo il push, GitHub Pages rigenera il sito automaticamente.
+
+## 8) Attivazione Formspree (modulo contatti con invio email)
+1. Crea un account su Formspree.
+2. Crea un nuovo form e copia l'endpoint (formato tipo `https://formspree.io/f/xxxxxx`).
+3. Apri `index.html` e sostituisci:
+   - `https://formspree.io/f/INSERISCI_TUO_ENDPOINT`
+   con il tuo endpoint reale.
+4. In Formspree verifica la casella email destinataria.
+5. Fai un invio test dal sito.
+
+Nota: l'upload foto dipende dal piano Formspree e dai limiti file attivi sul tuo account.
+
+## 9) Attivazione Curator.io (feed Instagram)
+1. Crea un account su Curator.io.
+2. Crea un feed e collega il profilo Instagram.
+3. Copia il codice script pubblicato da Curator.io.
+4. Apri `index.html` e sostituisci:
+   - `https://cdn.curator.io/published/INSERISCI_FEED_ID.js`
+   con lo script reale del tuo feed.
+5. Salva, fai commit e push:
+
+```bash
+git add .
+git commit -m "Attivazione Formspree e Curator"
+git push
+```
+
+6. Attendi la pubblicazione su GitHub Pages e verifica la sezione Instagram.

@@ -23,6 +23,30 @@
     </header>
 
     <main>
+      <section class="section container" id="portfolio">
+        <h2>Portfolio Restauri</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Comò Luigi Filippo</h3>
+            <p>
+              Restauro conservativo della struttura, pulizia delle superfici e ripristino della lucidatura.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Credenza in noce</h3>
+            <p>
+              Consolidamento delle parti usurate, reintegrazione cromatica e finitura protettiva finale.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Tavolo fratino d'epoca</h3>
+            <p>
+              Recupero della patina originale e trattamento antitarlo con interventi non invasivi.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="section container" id="servizi">
         <h2>Servizi principali</h2>
         <div class="grid">
@@ -57,14 +81,62 @@
         </div>
       </section>
 
+      <section class="section container" id="instagram">
+        <h2>Instagram</h2>
+        <p>
+          Collega qui il feed automatico Curator.io sostituendo il codice script con quello del tuo account.
+        </p>
+        <div id="curator-feed-default-feed-layout">
+          <a href="https://curator.io" target="_blank" rel="noreferrer">Powered by Curator.io</a>
+        </div>
+      </section>
+
       <section class="section container" id="contatti">
         <h2>Contatti</h2>
         <p>Per informazioni o sopralluoghi:</p>
-        <ul>
-          <li>Email: info@restaurocarretti.it</li>
-          <li>Telefono: +39 000 000 0000</li>
-          <li>Laboratorio: Via Esempio 10, Città</li>
-        </ul>
+        <div class="contact-layout">
+          <div class="card">
+            <h3>Recapiti</h3>
+            <ul>
+              <li>Email: info@restaurocarretti.it</li>
+              <li>Telefono: +39 000 000 0000</li>
+              <li>Laboratorio: Via Esempio 10, Città</li>
+            </ul>
+            <p><a href="https://wa.me/390000000000" target="_blank" rel="noreferrer">WhatsApp</a></p>
+            <p><a href="https://instagram.com/tuoprofilo" target="_blank" rel="noreferrer">Instagram</a></p>
+            <p><a href="https://facebook.com/tuapagina" target="_blank" rel="noreferrer">Facebook</a></p>
+          </div>
+
+          <form class="card contact-form" action="https://formspree.io/f/INSERISCI_TUO_ENDPOINT" method="POST" enctype="multipart/form-data">
+            <h3>Invia un messaggio</h3>
+            <label for="name">Nome e cognome</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Telefono</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="photo">Foto del pezzo (opzionale)</label>
+            <input id="photo" name="photo" type="file" accept="image/*" />
+
+            <input type="hidden" name="_subject" value="Nuovo contatto dal sito Restauro Carretti" />
+            <button class="btn" type="submit">Invia richiesta</button>
+          </form>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Mappa laboratorio Restauro Carretti"
+            src="https://www.google.com/maps?q=Duomo+Milano&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
 
@@ -73,5 +145,14 @@
         <p>© 2026 Restauro Carretti - Tutti i diritti riservati</p>
       </div>
     </footer>
+    <script type="text/javascript">
+      (function () {
+        var script = document.createElement("script");
+        script.src = "https://cdn.curator.io/published/INSERISCI_FEED_ID.js";
+        script.async = true;
+        var firstScript = document.getElementsByTagName("script")[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+      })();
+    </script>
   </body>
 </html>
