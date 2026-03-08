@@ -10,7 +10,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,7 +18,6 @@
     <section class="hero-fullscreen">
       <div class="hero-content">
         <h1 class="hero-title">Restauro Antichità</h1>
-        <p class="hero-by">by</p>
         <p class="hero-name" id="typewriter-text"></p>
       </div>
       <a href="#trattamenti" class="scroll-indicator">
@@ -97,40 +96,24 @@
         <div class="container">
           <h2 class="section-title animate">Gallery</h2>
 
-          <div class="gallery-layout">
-            <div class="gallery-photos animate animate-delay-1">
-              <img
-                src="https://images.unsplash.com/photo-1577083552431-6e5fd01988f1?auto=format&fit=crop&w=1200&q=80"
-                alt="Dettaglio restauro mobile antico"
-                loading="lazy"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1523419409543-a5e549c1f67c?auto=format&fit=crop&w=1200&q=80"
-                alt="Laboratorio di restauro"
-                loading="lazy"
-              />
+          <div class="gallery-container animate">
+            <div class="gallery-collage animate-delay-1">
+              <img class="collage-photo collage-1" src="images/furniture-1.jpg" alt="Restauro mobile antico" loading="lazy" />
+              <img class="collage-photo collage-2" src="images/restoration-2.jpeg" alt="Dettagli restauro" loading="lazy" />
+              <img class="collage-photo collage-3" src="images/antique-3.jpeg" alt="Oggetti antichi" loading="lazy" />
+              <img class="collage-photo collage-4" src="images/workshop-4.jpeg" alt="Laboratorio di restauro" loading="lazy" />
             </div>
 
-            <div class="instagram-feed animate animate-delay-2">
-              <p class="instagram-title">Feed Instagram</p>
-              <div class="ig-feed-track" aria-label="Feed Instagram scorrevole">
-                <a href="https://www.instagram.com/restauro_antichita_carretti_en?igsh=amtyMXM0MHVhOGo1" target="_blank" rel="noreferrer" class="ig-post">
-                  <strong>Profilo ufficiale</strong>
-                  <span>Apri Instagram</span>
-                </a>
-                <a href="https://www.instagram.com/restauro_antichita_carretti_en?igsh=amtyMXM0MHVhOGo1" target="_blank" rel="noreferrer" class="ig-post">
-                  <strong>Ultimi lavori</strong>
-                  <span>@restauro_antichita_carretti_en</span>
-                </a>
-                <a href="https://www.instagram.com/restauro_antichita_carretti_en?igsh=amtyMXM0MHVhOGo1" target="_blank" rel="noreferrer" class="ig-post">
-                  <strong>Prima e dopo</strong>
-                  <span>Vedi sul profilo</span>
-                </a>
-                <a href="https://www.instagram.com/restauro_antichita_carretti_en?igsh=amtyMXM0MHVhOGo1" target="_blank" rel="noreferrer" class="ig-post">
-                  <strong>Contattami su Instagram</strong>
-                  <span>Messaggio diretto</span>
-                </a>
-              </div>
+            <div class="gallery-buttons animate-delay-2">
+              <a href="https://www.instagram.com/restauro_antichita_carretti_en?igsh=amtyMXM0MHVhOGo1" target="_blank" rel="noreferrer" class="gallery-btn">
+                Profilo Instagram
+              </a>
+              <a href="#" class="gallery-btn" data-feed="feed1">
+                Feed 1
+              </a>
+              <a href="#" class="gallery-btn" data-feed="feed2">
+                Feed 2
+              </a>
             </div>
           </div>
         </div>
